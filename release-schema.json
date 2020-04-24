@@ -1,0 +1,36 @@
+{
+  "definitions": {
+    "Lot": {
+      "properties": {
+        "hasRenewal": {
+          "title": "Has renewal",
+          "description": "Whether the lot can be renewed or extended.",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "renewal": {
+          "title": "Renewal",
+          "description": "Information about the renewal or the extension of the lot.",
+          "$ref": "#/definitions/Renewal"
+        }
+      }
+    },
+    "Renewal": {
+      "title": "Renewal",
+      "description": "Information about the renewal or the extension of the lot.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "title": "Description",
+          "description": "Information about the renewal or the extension of the lot.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
