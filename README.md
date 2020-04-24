@@ -1,6 +1,6 @@
 # Renewal
 
-Adds information about the renewal or the extension of the lot.
+Adds fields to lots, to describe the options for the renewal of contracts.
 
 ## Legal context
 
@@ -43,7 +43,7 @@ In the European Union, this extension's fields correspond to [eForms BT-57 (Rene
         },
         "hasRenewal": true,
         "renewal": {
-          "description": "The contracting authority reserves the right to extend the term for a period or periods of up to 1 year with a maximum of 2 such extensions on the same terms and conditions, subject to the contracting        authority’s obligations at law."
+          "description": "The contracting authority reserves the right to extend the term for a period or periods of up to 1 year with a maximum of 2 such extensions on the same terms and conditions, subject to the contracting authority’s obligations at law."
         }
       },
       {

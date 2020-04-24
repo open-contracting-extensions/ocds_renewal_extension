@@ -3,7 +3,7 @@
     "en": "Renewal"
   },
   "description": {
-    "en": "Adds information about the renewal or the extension of the lot."
+    "en": "Adds fields to lots, to describe the options for the renewal of contracts."
   },
   "documentationUrl": {
     "en": "https://github.com/open-contracting-extensions/ocds_renewal_extension"
