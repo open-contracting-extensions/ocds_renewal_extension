@@ -73,7 +73,7 @@ If the number of times a contract can be renewed is an exact number and not a ra
           "maximumRenewal": 3,
           "renewalPeriod": {
             "startDate": "2021-02-10T00:00:00Z",
-            "endDate": "2024-02-10T00:00:00Z" 
+            "endDate": "2024-02-10T00:00:00Z"
           }
         }
       }
