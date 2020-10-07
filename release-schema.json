@@ -31,7 +31,7 @@
           ],
           "minLength": 1
         },
-        "minimumRenewal": {
+        "minimumRenewals": {
           "title": "Minimum renewal",
           "description": "The minimum number of renewals.",
           "type": [
@@ -39,7 +39,7 @@
             "null"
           ]
         },
-        "maximumRenewal": {
+        "maximumRenewals": {
           "title": "Maximum renewal",
           "description": "The maximum number of renewals. If there is no maximum, set to 1e9999 (which parses to infinity).",
           "type": [
@@ -47,7 +47,7 @@
             "null"
           ]
         },
-        "renewalPeriod": {
+        "period": {
           "title": "Renewal period",
           "description": "The period over which the contract can be renewed.",
           "$ref": "#/definitions/Period"

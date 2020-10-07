@@ -69,9 +69,9 @@ If the number of times a contract can be renewed is an exact number and not a ra
         "hasRenewal": true,
         "renewal": {
           "description": "Contracts are due to be renewed one time at the end of the initial term.",
-          "minimumRenewal": 3,
-          "maximumRenewal": 3,
-          "renewalPeriod": {
+          "minimumRenewals": 3,
+          "maximumRenewals": 3,
+          "period": {
             "startDate": "2021-02-10T00:00:00Z",
             "endDate": "2024-02-10T00:00:00Z"
           }
@@ -90,7 +90,7 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2020-10-06
 
-* Add the `minimumRenewal` and `maximumRenewal` fields to the `Renewal` object.
+* Add the `minimumRenewals`, `maximumRenewals` and `period` fields to the `Renewal` object.
 
 ### 2020-04-24
 
