@@ -47,8 +47,8 @@ If the number of times a contract can be renewed is an exact number and not a ra
         "hasRenewal": true,
         "renewal": {
           "description": "The contracting authority reserves the right to extend the term for a period or periods of up to 1 year with a maximum of 2 such extensions on the same terms and conditions, subject to the contracting authority’s obligations at law.",
-          "maximumRenewal": 2,
-          "renewalPeriod": {
+          "maximumRenewals": 2,
+          "period": {
             "durationInDays": 365
           }
         }
