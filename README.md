@@ -6,6 +6,10 @@ Adds fields to lots, to describe the options for the renewal of contracts.
 
 In the European Union, this extension's fields correspond to [eForms BT-57 (Renewal Description)](https://github.com/eForms/eForms). See [OCDS for the European Union](http://standard.open-contracting.org/profiles/eu/master/en/) for the correspondences to Tenders Electronic Daily (TED).
 
+## Guidance
+
+If the number of times a contract can be renewed is an exact number and not a range, set `minimumRenewals` and `maximumRenewals` to the same number.
+
 ## Example
 
 ```json
@@ -42,7 +46,11 @@ In the European Union, this extension's fields correspond to [eForms BT-57 (Rene
         },
         "hasRenewal": true,
         "renewal": {
-          "description": "The contracting authority reserves the right to extend the term for a period or periods of up to 1 year with a maximum of 2 such extensions on the same terms and conditions, subject to the contracting authority’s obligations at law."
+          "description": "The contracting authority reserves the right to extend the term for a period or periods of up to 1 year with a maximum of 2 such extensions on the same terms and conditions, subject to the contracting authority’s obligations at law.",
+          "maximumRenewals": 2,
+          "period": {
+            "durationInDays": 365
+          }
         }
       },
       {
@@ -60,7 +68,13 @@ In the European Union, this extension's fields correspond to [eForms BT-57 (Rene
         },
         "hasRenewal": true,
         "renewal": {
-          "description": "Contracts are due to be renewed one time at the end of the initial term."
+          "description": "Contracts are due to be renewed one time at the end of the initial term.",
+          "minimumRenewals": 3,
+          "maximumRenewals": 3,
+          "period": {
+            "startDate": "2021-02-10T00:00:00Z",
+            "endDate": "2024-02-10T00:00:00Z"
+          }
         }
       }
     ]
@@ -73,6 +87,10 @@ In the European Union, this extension's fields correspond to [eForms BT-57 (Rene
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### 2020-10-06
+
+* Add the `minimumRenewals`, `maximumRenewals` and `period` fields to the `Renewal` object.
 
 ### 2020-04-24
 
