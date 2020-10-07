@@ -8,7 +8,7 @@ In the European Union, this extension's fields correspond to [eForms BT-57 (Rene
 
 ## Guidance
 
-If the number of times a contract can be renewed is an exact number and not a range, set `minimumRenewal` and `maximumRenewal` to the same number.
+If the number of times a contract can be renewed is an exact number and not a range, set `minimumRenewals` and `maximumRenewals` to the same number.
 
 ## Example
 
