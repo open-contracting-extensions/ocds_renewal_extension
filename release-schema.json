@@ -4,7 +4,7 @@
       "properties": {
         "hasRenewal": {
           "title": "Has renewal",
-          "description": "Whether the future contracts can be renewed.",
+          "description": "Whether the contracts can be renewed.",
           "type": [
             "boolean",
             "null"
@@ -12,7 +12,7 @@
         },
         "renewal": {
           "title": "Renewal",
-          "description": "The options for the renewal of the future contracts.",
+          "description": "The options for the renewal of the contracts.",
           "$ref": "#/definitions/Renewal"
         }
       }
