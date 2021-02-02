@@ -1,5 +1,22 @@
 {
   "definitions": {
+    "Tender": {
+      "properties": {
+        "hasRenewal": {
+          "title": "Has renewal",
+          "description": "Whether the contracts can be renewed.",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "renewal": {
+          "title": "Renewal",
+          "description": "The options for the renewal of the contracts.",
+          "$ref": "#/definitions/Renewal"
+        }
+      }
+    },
     "Lot": {
       "properties": {
         "hasRenewal": {
