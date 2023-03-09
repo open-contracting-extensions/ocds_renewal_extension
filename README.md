@@ -90,11 +90,16 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ### 2021-01-19
 
-* Add the `hasRenewal` and `renewal` fields to the Tender object.
+* Add fields:
+  * `Tender.hasRenewal`
+  * `Tender.renewal`
 
 ### 2020-10-06
 
-* Add the `minimumRenewals`, `maximumRenewals` and `period` fields to the `Renewal` object.
+* Add fields:
+  * `Renewal.minimumRenewals`
+  * `Renewal.maximumRenewals`
+  * `Renewal.period`
 
 ### 2020-04-24
 
