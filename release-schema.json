@@ -4,7 +4,7 @@
       "properties": {
         "hasRenewal": {
           "title": "Has renewal",
-          "description": "Whether the contracts can be renewed.",
+          "description": "Whether the buyer is expected to reserve the right to renew the future contract(s).",
           "type": [
             "boolean",
             "null"
@@ -12,7 +12,41 @@
         },
         "renewal": {
           "title": "Renewal",
-          "description": "The options for the renewal of the contracts.",
+          "description": "The options for the renewal of the contract(s).",
+          "$ref": "#/definitions/Renewal"
+        }
+      }
+    },
+    "Award": {
+      "properties": {
+        "hasRenewal": {
+          "title": "Has renewal",
+          "description": "Whether the buyer is expected to reserve the right to renew the future contract(s).",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "renewal": {
+          "title": "Renewal",
+          "description": "The options for the renewal of the contract(s).",
+          "$ref": "#/definitions/Renewal"
+        }
+      }
+    },
+    "Contract": {
+      "properties": {
+        "hasRenewal": {
+          "title": "Has renewal",
+          "description": "Whether the buyer reserves the right to renew the contract.",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "renewal": {
+          "title": "Renewal",
+          "description": "The options for the renewal of the contract.",
           "$ref": "#/definitions/Renewal"
         }
       }
@@ -21,7 +55,7 @@
       "properties": {
         "hasRenewal": {
           "title": "Has renewal",
-          "description": "Whether the contract related to the lot can be renewed.",
+          "description": "Whether the buyer is expected to reserve the right to renew the future contract(s) related to the lot.",
           "type": [
             "boolean",
             "null"
@@ -29,7 +63,7 @@
         },
         "renewal": {
           "title": "Renewal",
-          "description": "The options for the renewal of the contract related to the lot.",
+          "description": "The options for the renewal of the contract(s) related to the lot.",
           "$ref": "#/definitions/Renewal"
         }
       }

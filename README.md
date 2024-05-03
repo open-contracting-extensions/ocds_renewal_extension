@@ -1,6 +1,6 @@
 # Renewal
 
-Adds fields to the Tender and Lot objects to describe the options for the renewal of contracts.
+Adds fields to the Tender, Lot, Award and Contract objects to describe the options for the renewal of contracts.
 
 ## Legal context
 
@@ -87,6 +87,15 @@ If the number of times a contract can be renewed is an exact number and not a ra
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+### 2024-05-02
+
+* Add fields:
+  * `Award.hasRenewal`
+  * `Award.renewal`
+  * `Contract.hasRenewal`
+  * `Contract.renewal`
+* Clarify description of `Tender.hasRenewal` and `Lot.hasRenewal`.
 
 ### 2021-01-19
 
