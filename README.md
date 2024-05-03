@@ -1,6 +1,6 @@
 # Renewal
 
-Adds fields to the Tender, Lot, Award and Contract objects to describe the options for the renewal of contracts.
+Adds fields to describe the options for the renewal of contracts.
 
 ## Legal context
 
